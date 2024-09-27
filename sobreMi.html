@@ -4,26 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Sobre mi</title>
+
+    <!-- Conexión al CDN de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Conexión a la tipografía Open Sans -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Hoja de estilo personalizada -->
     <link rel="stylesheet" href="estilos.css">
 </head>
 
 
 <body>
-    <header>
-        <h1> Lizbeth Diaz </h1>
-        <p> Java Full Stack Developer | Amante del Arte y la tecnología </p>
-    </header>
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Lizbeth Diaz</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#logros">Logros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#hobbies">Hobbies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#musica">Música</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-    <nav class="text-center">
-        <a href=""> Sobre mí </a>
-        <a href=""> Logros </a>
-        <a href="">Hobbies</a>
-        <a href="">Mi musica favorita</a>
-        <a href=""> Contacto </a>
-    </nav>
-<!-- carrusel -->
+    <!-- Carrusel de imágenes -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
@@ -53,61 +75,107 @@
         </button>
     </div>
 
-    <selection><!-- Sección sobre mí -->
-        <h2 id="sobre-mi">Sobre mí</h2>
-        <img src="./imagenes/pro2.0.jpg" alt="holi, soy yo" class="img-fluid mb-3">
-        <p>
-            Hola,Soy Lizbeth Diaz, actualmente estoy participando en el bootcamp Java Full Stack Developer. Me apasiona la tecnología y creo que es una herrmienta muy importante para transformar nuestras vidas. Me interesa el impacto positivo que puedo generar a través de mis habilidades. Además, me encanta el arte, la música y los videojuegos indie.
-        </p>
-        <p>
-            Fuera de los estudios, administro un negocio de abarrotes y ademas cuido de mis seis gatiHijos. Siempre estoy
-            buscando formas de optimizar mi tiempo, mantenerme activa y seguir aprendiendo.
-        </p>
-    </selection>
 
-    <section id="logros"> <!-- Sección de logros -->
-        <h2> Logros </h2>
-        <ul>
-            <li>Exbecaria de Bécalas, participando en jornadas académicas en CDMX. </li>
-            <li>Seleccionada para exponer frente a mujeres exitosas en la clausura de un evento de liderazgo.</li>
-            <li>Participante en el curso de ciencia de datos y emprendimiento.</li>
-            <li>Aplicante a la beca Reto Actinver, interesada en los temas financieros.</li>
-        </ul>
-    </section>
+    <div class="container my-5">
+        <div class="row">
 
-    <section id="hobbies"> <!-- sección va el apartado de hobbies, con una lista desordenada -->
-        <h2>Mis hobbies</h2>
-        <ul>
-            <li>Tocar el piano</li>
-            <li>Jugar videojuegos indie</li>
-            <li>Cuidar a mis gatos</li>
-            <li>Diseñar</li>
-            <li>Pintar con acuarela</li>
-            <li>Aprender sobre finanzas y tecnología</li>
-        </ul>
-    </section>
+            <!-- Sección sobre mí -->
+            <section id="sobre-mi" class="col-md-6">
+                <h2>Sobre mí</h2>
+                <img src="./imagenes/yo.png" alt="holi, soy yo" class="img-fluid mb-3">
+                <p>Hola, Soy Lizbeth Diaz, actualmente estoy participando en el bootcamp Java Full Stack Developer. Me
+                    apasiona la tecnología y creo que es una herramienta muy importante para transformar nuestras vidas.</p>
+                <p>Fuera de los estudios, administro un negocio de abarrotes y además cuido de mis seis gatiHijos. Siempre
+                    estoy buscando formas de optimizar mi tiempo, mantenerme activa y seguir aprendiendo.</p>
+            </section>
 
-    <section id="musica"><!-- Sección de música favorita -->
-        <h2>Mi musica favorita</h2>
-        <ol>
-            <li><a href="https://open.spotify.com/intl-es/track/18mNRyfNGQvVfwTJo27sNR?si=ecd399983e7443ca">Go! | M83,MAILAN</a></li>
-            <li><a href="https://open.spotify.com/intl-es/track/175x6TYDj1tQK5xLf25v9r?si=b22f8cdaaafb4b5c">Children | cosmos & creature</a></li>
-            <li><a href="https://open.spotify.com/intl-es/track/2QffgsYVZkvMQsZmQdgf2L?si=b1b6e2e0cfdf4c42">Paper Love | allie X</a> </li>
-            <li><a href="https://open.spotify.com/intl-es/track/0M6urYKXizSJgtuipqmctu?si=e07c8acd58734dd5">Gilded Lily | cults</a> </li>
-            <li><a href="https://open.spotify.com/intl-es/track/3KdrHRCbuLTvbiJ89jdFla?si=95fd396923ac4a2d">Soak My head | Meltt</a></li>
-        </ol>
+
+            <!-- Sección de logros -->
+            <section id="logros" class="col-md-6">
+                <h2>Logros</h2>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Exbecaria de Bécalas</h5>
+                        <p class="card-text">Participando en jornadas académicas en CDMX.</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Seleccionada para exponer</h5>
+                        <p class="card-text">Expuesta frente a mujeres exitosas en la clausura de un evento de liderazgo.</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Ciencia de Datos y Emprendimiento</h5>
+                        <p class="card-text">Participante en el curso de ciencia de datos y emprendimiento.</p>
+                    </div>
+                </div>
+            </section>
+            </div>
+
+
+<!-- Sección de hobbies -->
+<section id="hobbies" class="my-5">
+    <h2>Mis hobbies</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <ul class="list-group">
+                <li class="list-group-item">Tocar el piano</li>
+                <li class="list-group-item">Jugar videojuegos indie</li>
+                <li class="list-group-item">Cuidar a mis gatos</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <ul class="list-group">
+                <li class="list-group-item">Diseñar</li>
+                <li class="list-group-item">Pintar con acuarela</li>
+                <li class="list-group-item">Aprender sobre finanzas y tecnología</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<!-- Sección de música favorita -->
+<section id="musica" class="my-5">
+    <h2>Mi música favorita</h2>
+    <ol class="list-group list-group-numbered">
+        <li class="list-group-item"><a
+                href="https://open.spotify.com/intl-es/track/18mNRyfNGQvVfwTJo27sNR?si=ecd399983e7443ca">Go! |
+                M83,MAILAN</a></li>
+        <li class="list-group-item"><a
+                href="https://open.spotify.com/intl-es/track/175x6TYDj1tQK5xLf25v9r?si=b22f8cdaaafb4b5c">Children |
+                cosmos & creature</a></li>
+        <li class="list-group-item"><a
+                href="https://open.spotify.com/intl-es/track/2QffgsYVZkvMQsZmQdgf2L?si=b1b6e2e0cfdf4c42">Paper Love |
+                allie X</a></li>
+        <li class="list-group-item"><a
+                href="https://open.spotify.com/intl-es/track/0M6urYKXizSJgtuipqmctu?si=e07c8acd58734dd5">Gilded Lily |
+                cults</a></li>
+        <li class="list-group-item"><a
+                href="https://open.spotify.com/intl-es/track/3KdrHRCbuLTvbiJ89jdFla?si=95fd396923ac4a2d">Soak My head |
+                Meltt</a></li>
+    </ol>
+</section>
+
         
-    </section>
+    
 
-    <seletion id="contacto"> <!-- Sección de contacto -->
-        <h2>Contacto</h2>
-        <p>Correo electronico: <a href="mailto:liz.diaz.feria@gmail.com">liz.diaz.feria@gmail</a></p>
-        <p>Teléfono: <a href="tel:+52381198714">2381198714</a> </p>
-    </seletion>
-
-    <footer>
-        <p> Hecho con 💜 desde CH46</p>
-    </footer>
+        <!-- Sección de contacto -->
+        <section id="contacto" class="my-5">
+            <h2>Contacto</h2>
+            <p>Correo electrónico: <a href="mailto:liz.diaz.feria@gmail.com">liz.diaz.feria@gmail.com</a></p>
+            <p>Teléfono: <a href="tel:+52381198714">2381198714</a> </p>
+        </section>
+        </div>
+        
+        <footer class="text-center py-3">
+            <p>Hecho con 💜 desde CH46</p>
+        </footer>
+        
+        <!-- Scripts de Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

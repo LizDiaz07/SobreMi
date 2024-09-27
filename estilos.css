@@ -1,73 +1,85 @@
+/* Estilos personalizados */
+
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #fef4f8;
+    background-color: #f8f9fa;
     color: #333;
 }
 
-header {
-    text-align: center;
-    padding: 50px 0;
-    background-color: #ffe7e9;
-    color: #d45b8c;
-}
-
-header h1 {
-    font-weight: 600;
-    font-size: 2.5rem;
-}
-
-header p {
-    font-weight: 300;
-}
-
-nav {
-    background-color: #f7cedd;
-    padding: 10px 0;
-}
-
-nav a {
-    color: #d45b8c;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-nav a:hover {
-    background-color: #fbe3e9;
-}
-
-.carousel-item img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-}
-
-section {
-    padding: 40px;
-    margin: 20px 0;
-    background-color: #fff1f4;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
 h2 {
-    color: #d45b8c;
+    color: #5a5a5a;
     font-weight: 600;
 }
 
-ul,
-ol {
-    margin-left: 20px;
+p,
+li {
+    font-weight: 300;
+    line-height: 1.6;
 }
 
+/* Estilos para la navegación */
+.navbar {
+    background-color: #cf76e0;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+    font-weight: 600;
+}
+
+.navbar .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-link:hover {
+    color: #f8f9fa;
+}
+
+/* Estilo para las tarjetas */
+.card {
+    border: none;
+    background-color: #e9ecef;
+}
+
+.card .card-title {
+    color: #e053bd;
+    font-weight: 600;
+}
+
+/* Estilo para las listas */
+.list-group-item {
+    background-color: #f8f9fa;
+    border: none;
+}
+
+/* Estilo para los enlaces */
+a {
+    color: #cf69d8;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #dd4fca;
+}
+
+/* Estilo para el footer */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #ffe7e9;
-    color: #d45b8c;
-    font-size: 0.9rem;
+    background-color: #cf8eba;
+    color: #fff;
 }
 
 footer p {
     margin: 0;
+}
+
+/* Carrusel */
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #f578ea;
+    border-radius: 50%;
 }
