@@ -3,14 +3,18 @@
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #f8f9fa;
-    color: #333;
+    color: #4d0735;
 }
 
 h2 {
-    color: #5a5a5a;
+    color: #570e51;
+    font-weight: 600;
+    
+}
+h1{
+    color: #380957;
     font-weight: 600;
 }
-
 p,
 li {
     font-weight: 300;
@@ -22,17 +26,14 @@ li {
     background-color: #cf76e0;
 }
 
-.navbar .navbar-brand {
-    color: #fff;
-    font-weight: 600;
-}
+
 
 .navbar .nav-link {
-    color: #fff;
+    color: #4b0339;
 }
 
 .navbar .nav-link:hover {
-    color: #f8f9fa;
+    color: #d168e6;
 }
 
 /* Estilo para las tarjetas */
@@ -48,7 +49,7 @@ li {
 
 /* Estilo para las listas */
 .list-group-item {
-    background-color: #f8f9fa;
+    background-color: #7c417c0c;
     border: none;
 }
 
